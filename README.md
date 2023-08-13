@@ -1,7 +1,8 @@
 # rotator_on_Arduino (for an Arduino microcontroller):
-C++ code for rotator on Arduino
+- **`C++`** code for **rotator on Arduino**
 
-## Ver 1. A Stepper Motor.
+
+## Ver 1. A Stepper Motor. To darken a given HEX color value by a specified factor
 
 1. The "Stepper" library is included to control a stepper motor.
 2. **`stepsPerRevolution`** is a constant that defines the number of steps required for the motor to complete one full revolution. It's set to 400, but users might need to adjust this for their specific motor.
@@ -15,4 +16,17 @@ C++ code for rotator on Arduino
  - The stepper motor rotates one full revolution counter-clockwise (opposite the direction of the clock's hands). It then pauses for 2500 milliseconds.
 
 
-## Ver 2. На двух сервомоторах
+## Ver 2. To control a stepper motor to rotate clockwise and counter-clockwise while blinking a built-in LED.
+
+1. The code uses the **`Servo`** library which provides functionality to control servo motors.
+2. Two servo objects **`servo`** and **`servo1`** are declared.
+3. Within the **`setup()`** function:
+ - **`servo`** is attached to pin 10.
+ - **`servo1`** is attached to pin 8.
+ - The built-in LED is set as an output.
+4. Inside the **`loop()`** function (which runs indefinitely):
+ - The built-in LED toggles its state (on for 1 second, then off for 1 second).
+ - The two servo motors (**`servo`** and **`servo1`**) adjust their positions in a specific sequence. Each adjustment is followed by a half-second delay.
+ - After a certain set of positions, there is a longer delay of 15 seconds before the sequence repeats.
+        
+- **The servos are repeatedly moving between various positions while the LED is blinking in the background.**
