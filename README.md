@@ -30,3 +30,7 @@
  - After a certain set of positions, there is a longer delay of 15 seconds before the sequence repeats.
         
 - **The servos are repeatedly moving between various positions while the LED is blinking in the background.**
+
+---
+
+![image](https://github.com/DmPanf/Arduino_Rotator/assets/99917230/127754ef-0b0b-44de-94c8-69d1f44240ae)
