@@ -1,4 +1,4 @@
-# rotator_on_Arduino (for an Arduino microcontroller):
+# Rotator_on_Arduino (for an Arduino microcontroller):
 - **`C++`** code for **rotator on Arduino**
 
 
